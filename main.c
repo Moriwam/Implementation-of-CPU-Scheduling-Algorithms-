@@ -16,25 +16,25 @@ char pn[10][10],t[10];
 int p[10],st[10],ft[10];
 float priority=0;
 //////input section/////
-printf("\n\nEnter number of processes: ");
+freopen("input.txt","r",stdin);
 scanf("%d",&n);
-printf("\nEnter arrival time below:\n");
-for(int i=0;i<n;i++)
-{
-printf(" P[%d]:",i+1 );
-scanf("%d",&at[i]);
-}
-printf("\nEnter burst time below:\n");
+
 for(int i=0;i<n;i++)
 {
 
-printf(" P[%d]:",i+1);
+scanf("%d",&at[i]);
+}
+
+for(int i=0;i<n;i++)
+{
+
+
 scanf("%d",&bt[i]);
 }
-printf("\nEnter priority of the processes below:\n");
+
 for(i=0; i<n; i++)
 {
-printf(" P[%d]:",i+1);
+
 scanf("%d",&p[i]);
 }
 //starting of fcfs scheduling//
